@@ -1,17 +1,17 @@
-import { FastifyInstance } from "fastify";
-import { ZodTypeProvider } from "fastify-type-provider-zod";
+import {
+  BadRequest
+} from "./chunk-JRO4E4TH.mjs";
+import {
+  prisma
+} from "./chunk-JV6GRE7Y.mjs";
+
+// src/routes/get-attendee-badge.ts
 import { z } from "zod";
-import { prisma } from '../lib/prisma'
-
-import { BadRequest } from "./_errors/bad-request";
-
-export async function getAttendeeBadge(app: FastifyInstance) {
-  app
-  .withTypeProvider<ZodTypeProvider>()
-  .get('/attendees/:attendeeId/badge', {
+async function getAttendeeBadge(app) {
+  app.withTypeProvider().get("/attendees/:attendeeId/badge", {
     schema: {
-      summary: 'Get an attendee badge',
-      tags: ['attendees'],
+      summary: "Get an attendee badge",
+      tags: ["attendees"],
       params: z.object({
         attendeeId: z.coerce.number().int()
       }),
@@ -27,8 +27,7 @@ export async function getAttendeeBadge(app: FastifyInstance) {
       }
     }
   }, async (request, reply) => {
-    const { attendeeId } = request.params
-
+    const { attendeeId } = request.params;
     const attendee = await prisma.attendee.findUnique({
       select: {
         name: true,
@@ -36,23 +35,19 @@ export async function getAttendeeBadge(app: FastifyInstance) {
         //para mostrar o nome do evento no get de attendees com o relacionamento entre as tabelas q fizemos
         event: {
           select: {
-            title: true,
+            title: true
           }
         }
       },
       where: {
         id: attendeeId
       }
-    })
-
+    });
     if (attendee === null) {
-      throw new BadRequest('Attendee not found.')
+      throw new BadRequest("Attendee not found.");
     }
-
-   const baseURL =  `${request.protocol}://${request.hostname}`
-
-   const checkInURL = new URL(`/attendees/${attendeeId}/check-in`, baseURL)
-
+    const baseURL = `${request.protocol}://${request.hostname}`;
+    const checkInURL = new URL(`/attendees/${attendeeId}/check-in`, baseURL);
     return reply.send({
       badge: {
         name: attendee.name,
@@ -60,6 +55,10 @@ export async function getAttendeeBadge(app: FastifyInstance) {
         eventTitle: attendee.event.title,
         checkInURL: checkInURL.toString()
       }
-    })
-  })
+    });
+  });
 }
+
+export {
+  getAttendeeBadge
+};
