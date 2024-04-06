@@ -62,7 +62,7 @@ git clone https://github.com/IngridAltafini/NLW-Unite.git
 
 <h2>✨ Instalação</h2> 
 
-Instale as dependencias utilizando: 
+Instale as dependências utilizando: 
 
 ```bash 
 
@@ -80,7 +80,7 @@ npm run db:migrate
 
 ``` 
 
-<h2>✨ Dependencias</h2> 
+<h2>✨ Dependências</h2> 
 
 ```
     "@faker-js/faker": "^8.4.1",
