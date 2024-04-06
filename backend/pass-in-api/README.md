@@ -56,7 +56,7 @@ Clone este respositório em seu terminal utilizando:
 
 ```bash 
 
-git clone https://github.com/IngridAltafini/Asas-na-Estrada.git 
+https://github.com/IngridAltafini/NLW-Unite.git
 
 ``` 
 
