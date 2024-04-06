@@ -2,28 +2,28 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": 123,
+  "title": "Novo Evento",
   "details": null,
   "maximumAttendees": 1
 }
 
 ###
-POST http://localhost:3333/events/635a7578-2c7d-4e33-8be7-bba0fb02e0a1/attendees
+POST http://localhost:3333/events/0070230f-12ff-41c6-b24f-024cbb122aae/attendees
 Content-Type: application/json
 
 {
-  "name": "Ingrid Altafini",
-  "email": "ingridaltafini25@gmail.com"
+  "name": "Alexsandra Santos",
+  "email": "alexsandrasantos02@gmail.com"
 }
 
 ###
-GET http://localhost:3333/events/635a7578-2c7d-4e33-8be7-bba0fb02e0a1
+GET http://localhost:3333/events/0070230f-12ff-41c6-b24f-024cbb122aae
 
 ###
-GET http://localhost:3333/attendees/2/badge
+GET http://localhost:3333/attendees/8/badge
 
 ###
-GET http://localhost:3333/attendees/3/check-in
+GET http://localhost:3333/attendees/5/check-in
 
 ###
 GET http://localhost:3333/events/635a7578-2c7d-4e33-8be7-bba0fb02e0a1/attendees?query=ingrid
