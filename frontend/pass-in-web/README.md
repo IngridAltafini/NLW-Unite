@@ -75,6 +75,6 @@ npm run dev
 
 <h2>✨ Imagens </h2>  
 
-![Pass.in](https://github.com/IngridAltafini/Asas-na-Estrada/blob/main/frontend/src/assets/readme/Welcome.png)
+![Pass.in](https://github.com/IngridAltafini/NLW-Unite/blob/main/frontend/pass-in-web/src/assets/readme/Pass-in.png)
 
-###### Ingrid Isabela Altafini - Estudante de Desenvolvimento Full-Stack  
+###### Ingrid Isabela Altafini - Desenvolvedora Back-end
