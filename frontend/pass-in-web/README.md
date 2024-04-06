@@ -30,7 +30,7 @@ git clone https://github.com/IngridAltafini/NLW-Unite.git
 <h2>✨ Instalação</h2>  
 
 
-Instale as dependencias utilizando:  
+Instale as dependências utilizando:  
 
 
 ```bash  
@@ -41,7 +41,7 @@ npm i
 
 <h2>✨ Executando</h2>  
 
-Ápos a instalação das dependemcias, execute o projeto utilizando:  
+Ápos a instalação das dependências, execute o projeto utilizando:  
 
 
 ```bash  
@@ -53,7 +53,7 @@ npm run dev
 <h3>❗O projeto é executado na porta 5173, portanto, verifique se ele está livre para uso.</h3>  
   
 
-<h2>✨ Dependencias</h2>  
+<h2>✨ dependências</h2>  
 
 
 ```  
@@ -73,7 +73,7 @@ npm run dev
 
 ```  
 
-<h2>✨ Imagens </h2>  
+<h2>✨ Imagem </h2>  
 
 ![Pass.in](https://github.com/IngridAltafini/NLW-Unite/blob/main/frontend/pass-in-web/src/assets/readme/Pass-in.png)
 
