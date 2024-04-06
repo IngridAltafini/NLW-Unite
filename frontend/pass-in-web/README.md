@@ -18,7 +18,7 @@
   
 <h2>✨ Clonado</h2>  
 
-  <h3>❗Você provavelmente já realizou a clonação do repositório NLW- nite pelo README.MD da pasta Backend, caso não tenha realizado:</h3>  
+  <h3>❗Você provavelmente já realizou o clone do repositório NLW Unite pelo README.MD da pasta Backend, caso não tenha realizado:</h3>  
 
   
   ```bash  
