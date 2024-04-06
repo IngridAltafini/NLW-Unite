@@ -53,7 +53,7 @@ npm run dev
 <h3>❗O projeto é executado na porta 5173, portanto, verifique se ele está livre para uso.</h3>  
   
 
-<h2>✨ dependências</h2>  
+<h2>✨ Dependências</h2>  
 
 
 ```  
