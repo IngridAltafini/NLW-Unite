@@ -1,6 +1,6 @@
 <h1>✨ Pass.in</h1> 
 
-  <h3>Projeto realizado a partir do evento NLM Unite proporcionado pela Rockteseat.</h3> 
+  <h3>Projeto desenvolvido durante o evento NLM Unite, organizado pela Rocketseat.</h3> 
 
   <h3>Este projeto tem como proposta desenvolver uma aplicação de gestão de participantes em eventos presenciais.</h3> 
 
@@ -56,7 +56,7 @@ Clone este respositório em seu terminal utilizando:
 
 ```bash 
 
-https://github.com/IngridAltafini/NLW-Unite.git
+git clone https://github.com/IngridAltafini/NLW-Unite.git
 
 ``` 
 
